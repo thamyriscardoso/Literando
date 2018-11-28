@@ -1,0 +1,50 @@
+div.perfil{
+    margin: 10px;
+    width: max-content;
+    padding-top: 10px;
+  }
+  progress, .progress {
+    display: inline-block;
+    margin: 4px 0;
+    width: 100%
+  }
+  div.perfil1{
+    margin: 10px;
+    width: auto;
+    padding-right: 200px;
+  }
+  div.imagens{
+    margin: 10px;
+      border-style: solid;
+      max-width: auto;
+      height: max-content;
+  }
+input[type="file"] {
+  display: inline-block;
+  opacity: 0;
+  position: absolute;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 67px;
+  width: 85%;
+  z-index: 99;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.custom-file-upload {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: url(http://icons.iconarchive.com/icons/mcdo-design/smooth-leopard/256/Upload-Folder-Graphite-icon.png) #fff center center no-repeat;
+  background-size: 100px;
+  width: 40%;
+  border: 1px dashed black;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
