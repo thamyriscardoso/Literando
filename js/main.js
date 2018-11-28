@@ -1,21 +1,9 @@
 import {login, cadastro, logout} from './firebase-auth.js';
-import {auth} from './firebase.js';
 const btnCadastro = document.querySelector('#cadastrar');
 const btnLogin = document.querySelector('#entrar');
 const btnSair = document.querySelector('#btnSair');
 const btnClose = document.querySelector('#close');
-const logado = document.querySelector('#ver');
 
-logado.addEventListener('click', function(e) {
-    e.preventDefault();
-    auth.onAuthStateChanged(function(user) {
-        if (user) {
-            window.location.replace('perfil.html');
-        } else {
-            window.location.replace('cadastro.html');
-        }
-    });
-});
 
 btnCadastro.addEventListener('click', function(e) {
     e.preventDefault();
