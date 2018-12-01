@@ -1,6 +1,6 @@
 import {auth} from './firebase.js';
 
-export const logado = auth.onAuthStateChanged(function(user) {
+auth.onAuthStateChanged(function(user) {
     if (user) {
         document.querySelector('#logado').style = 'display: none';
         document.querySelector('#btnSair').style = 'display: block';
