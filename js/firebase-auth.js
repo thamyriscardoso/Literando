@@ -4,8 +4,8 @@ auth.onAuthStateChanged(function(user) {
     if (user) {
         document.querySelector('#logado').style = 'display: none';
         document.querySelector('#btnSair').style = 'display: block';
-        window.location.replace('perfil.html');
         console.log('logado');
+        window.location.replace('perfil.html');
     } else {
         console.log('nao logado');
     }
@@ -34,7 +34,6 @@ export const logout = function() {
         .then(function() {
             document.querySelector('#btnSair').style = 'display: none';
             document.querySelector('#logado').style = 'display: block';
-            window.location.replace('index.html');
             console.log('Deslogou');
         });
 };
