@@ -32,7 +32,9 @@ btnLogin.addEventListener('click', function(e) {
     const inputSenha = document.querySelector('#loginSenha').value;
     login(inputEmail, inputSenha);
 });
-btnSair.addEventListener('click', logout);
+btnSair.addEventListener('click', logout){
+    window.location.replace('index.html');
+}
 btnClose.addEventListener('click', function() {
     document.querySelector('#msgError').style = 'display:none';
 });
