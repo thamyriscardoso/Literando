@@ -8,6 +8,7 @@ auth.onAuthStateChanged(function(user) {
         console.log('logado');
     } else {
         console.log('nao logado');
+        window.location.replace('index.html');
     }
 });
 
@@ -34,6 +35,7 @@ export const logout = function() {
         .then(function() {
             document.querySelector('#btnSair').style = 'display: none';
             document.querySelector('#logado').style = 'display: block';
+            window.location.replace('index.html');
             console.log('Deslogou');
         });
 };
@@ -43,6 +45,7 @@ export const cadastro = function(email, senha) {
         .then(function() {
             window.location.replace('index.html');
             console.log('sucesso');
+            window.location.replace('index.html');
         })
         .catch(function(error) {
             console.log(error);
