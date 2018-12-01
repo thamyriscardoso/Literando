@@ -7,7 +7,7 @@ const perfil = document.querySelector('#naologado');
 
 perfil.addEventListener('click',function(e){
     e.preventDefault();
-    if(logado === true){
+    if(logado(user)){
         window.location.replace('perfil.html');
     }
     else{
