@@ -4,6 +4,7 @@ auth.onAuthStateChanged(function(user) {
     if (user) {
         document.querySelector('#logado').style = 'display: none';
         document.querySelector('#btnSair').style = 'display: block';
+        window.location.replace('perfil.html');
         console.log('logado');
     } else {
         console.log('nao logado');
