@@ -33,7 +33,6 @@ export const logout = function() {
         .then(function() {
             document.querySelector('#btnSair').style = 'display: none';
             document.querySelector('#logado').style = 'display: block';
-            window.location.replace('index.html');
             console.log('Deslogou');
         });
 };
