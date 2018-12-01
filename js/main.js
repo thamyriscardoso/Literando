@@ -17,8 +17,6 @@ perfil.addEventListener('click',function(e){
         console.log('nao logado');
     }
 });
-   
-});
 
 btnCadastro.addEventListener('click', function(e) {
     e.preventDefault();
@@ -32,9 +30,7 @@ btnLogin.addEventListener('click', function(e) {
     const inputSenha = document.querySelector('#loginSenha').value;
     login(inputEmail, inputSenha);
 });
-btnSair.addEventListener('click', logout){
-    window.location.replace('index.html');
-}
+btnSair.addEventListener('click', logout);
 btnClose.addEventListener('click', function() {
     document.querySelector('#msgError').style = 'display:none';
 });
