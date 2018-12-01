@@ -5,7 +5,6 @@ export const logado = auth.onAuthStateChanged(function(user) {
         document.querySelector('#logado').style = 'display: none';
         document.querySelector('#btnSair').style = 'display: block';
         console.log('logado');
-        window.location.replace('perfil.html');
     } else {
         console.log('nao logado');
     }
