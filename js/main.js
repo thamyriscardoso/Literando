@@ -1,4 +1,5 @@
 import {login, cadastro, logout} from './firebase-auth.js';
+import {auth} from './firebase.js';
 const btnCadastro = document.querySelector('#cadastrar');
 const btnLogin = document.querySelector('#entrar');
 const btnSair = document.querySelector('#btnSair');
