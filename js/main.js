@@ -33,4 +33,4 @@ btnLogin.addEventListener('click', function(e) {
 btnSair.addEventListener('click', logout);
 btnClose.addEventListener('click', function() {
     document.querySelector('#msgError').style = 'display:none';
-})
+});
