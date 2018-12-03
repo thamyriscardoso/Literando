@@ -4,9 +4,11 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/sticky-footer.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/home.css">
     <title>Literando</title>
 </head>
 <body>
@@ -44,8 +46,6 @@
           </form>
         </div>
     </nav>
-    
-  
     <div class="modal fade" id="modalogin" tabindex="-1" role="dialog"                                      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -62,7 +62,7 @@
                 </button>
             </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Voltar</button>
+            <button type="button" class="btn btn-secondary btn-lg-4" data-dilg-4iss="modal">Voltar</button>
         </div>
             </div>
         </div>
@@ -86,7 +86,7 @@
                     <div class="form-submit">
                         <button type="submit" class="btn btn-primary" id="entrar">Entrar</button>
                         <span id="msgError">*Email e/ou Senha incorretos.</span>
-                        <button id="close" type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                        <button id="close" type="button" class="btn btn-secondary" data-dilg-4iss="modal">Voltar</button>
                     </div>
                 </form>
             </div>
@@ -98,7 +98,7 @@
         <div class="modal-content">
             <div class="modal-header">
             <h5 class="modal-title">Cadastre-se</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button type="button" class="close" data-dilg-4iss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
@@ -116,11 +116,42 @@
             </div>
             <div class="modal-footer">
                 <button type="submit" class="btn btn-primary" id="cadastrar">Cadastrar-se</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                <button type="button" class="btn btn-secondary" data-dilg-4iss="modal">Voltar</button>
             </div>
         </div>
         </div>
     </div>
+
+    <main role="main">
+        <section class="jumbotron text-center main">
+          <div class="container">
+            <h1 class="jumbotron-heading">Bem vindo(a) ao Literando!</h1>
+            <p class="lead text-muted">Literando é um site de ajuda para aqueles que querem estudar a literatura brasileira, mas não sabem por onde começar. Nele você encontra diversas informações que vão facilitar seu entendimento, melhorar sua percepção literária e gabaritar aquela prova super
+            importante!
+            </p>
+            <p>
+              <a href="sobre.html" class="btn btn-primary my-2">Saiba quem somos</a>
+            </p>
+          </div>
+        </section> 
+        <div class="container-fluid container2">
+            <div class="pt">
+                <h2>Dicas para o ENEM</h2>
+                <p>Nós sabemos que para ser aprovado no ENEM você precisa estudar muito bem, mas para te ajudar fizemos algumas dicas de gramtática que podem te ajudar, dê uma olhadinha!</p>
+                <p>
+                    <a href="dicas.html" class="btn btn-primary my-2">Ir para</a>
+                </p>
+            </div>
+            <div class="pt">
+                <h2>Linha do Tempo</h2>
+                <p>Você também é daquelas pessoas que se enrola quando estuda a literatura brasileira? Aqui está a solução, fizemos uma linha do tempo com todos períodos para que você nunca mais se perca, dê uma olhadinha!</p>
+                <p>
+                    <a href="linhatempo.html" class="btn btn-primary my-2">Ir para</a>
+                </p>
+            </div>
+        </div>
+      </main>
+      <br>
     <footer class="footer">
         <div class="container">
             <p class="text-muted"> © 2018 Copyright Text</p>

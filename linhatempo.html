@@ -4,61 +4,213 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+<!--<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/sticky-footer.css">
     <link rel="stylesheet" href="css/linha.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Literando</title>
 </head>
 <body>
-    <nav>
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Literando</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+        <a class="navbar-brand" href="index.html">Literando</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="linhatempo.html">Linha do tempo</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item active">
+                        <a class="nav-link" href="dicas.html">Dicas Enem</a>
+                </li>
+                <li class="nav-item active" id="naologado">
+                    <a class="nav-link" href="perfil.html">Perfil</a>
+                </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <ul class = "navbar-nav mr-auto">
+                    <li class="nav-item active" id="btnLogado">
+                        <button id="logado" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalogin">
+                                Login
+                        </button>
+                        <button style="display:none" id="btnSair" type="button" class="btn btn-primary">
+                                Sair
+                        </button>    
+                    </li>
+                </ul>
+          </form>
+        </div>
     </nav>
-    <ul class="cbp_tmtimeline">
-        <li>
-            <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span></span> <span>18:30</span></time>
-            <div class="cbp_tmicon cbp_tmicon-phone"></div>
-            <div class="cbp_tmlabel">
-                <h2>Quinhentismo</h2>
-                <p>O Quinhentismo representa a primeira manifestação literária no Brasil que também ficou conhecida como "literatura de informação".É um período literário que reúne relatos de viagem com características informativas e descritivas. São textos que descrevem as terras descobertas pelos portugueses no século XVI, desde a fauna, a flora e o povo.</p>
+    <div class="modal fade" id="modalogin" tabindex="-1" role="dialog"                                      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
             </div>
-        </li>
-        <li>
-            <time class="cbp_tmtime" datetime="2013-04-11T12:04"><span>4/11/13</span> <span>12:04</span></time>
-            <div class="cbp_tmicon cbp_tmicon-screen"></div>
-            <div class="cbp_tmlabel">
-                <h2>Arcadismo</h2>
-                <p>O Arcadismo ocorreu na Europa por volta do século XVIII (e por isso também é chamada de setecentismo). Trata-se de uma estética literária fortemente influenciada pela corrente filosófica Iluminista, por isso também era chamada de Ilustração.</p>
+            <div class="modal-body d-flex flex-column">
+                <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalEntrar">
+                    Entrar
+                </button>
+                <hr>
+                <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalCadastro">
+                    Cadastrar-se
+                </button>
             </div>
-        </li>
-        <li>
-            <time class="cbp_tmtime" datetime="2013-04-13 05:36"><span>4/13/13</span> <span>05:36</span></time>
-            <div class="cbp_tmicon cbp_tmicon-mail"></div>
-            <div class="cbp_tmlabel">
-                <h2>Sprout garlic kohlrabi</h2>
-                <p>Parsnip lotus root...</p>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Voltar</button>
+        </div>
             </div>
-        </li>
-        <li>
-            <time class="cbp_tmtime" datetime="2013-04-15 13:15"><span>4/15/13</span> <span>13:15</span></time>
-            <div class="cbp_tmicon cbp_tmicon-phone"></div>
-            <div class="cbp_tmlabel">
-                <h2>Watercress ricebean</h2>
-                <p>Peanut gourd nori...</p>
+        </div>
+    </div>
+    <div class="modal fade" id="modalEntrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Entrar</h5>
             </div>
-        </li>
-        <li>
-            <time class="cbp_tmtime" datetime="2013-04-16 21:30"><span>4/16/13</span> <span>21:30</span></time>
-            <div class="cbp_tmicon cbp_tmicon-earth"></div>
-            <div class="cbp_tmlabel">
-                <h2>Courgette daikon</h2>
-                <p>Parsley amaranth tigernut...</p>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: aline@mail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Senha</label>
+                        <input type="password" class="form-control" id="loginSenha" placeholder="*********">
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary" id="entrar">Entrar</button>
+                        <span id="msgError">*Email e/ou Senha incorretos.</span>
+                        <button id="close" type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                    </div>
+                </form>
             </div>
-        </li>
-    </ul>
+        </div>
+    </div>
+    </div>
+    <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Cadastre-se</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: aline@mail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Senha</label>
+                        <input type="password" class="form-control" id="cadastroSenha" placeholder="*********">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" id="cadastrar">Cadastrar-se</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="cbp_tmtimeline">
+            <li>
+                <time class="cbp_tmtime"><span></span> <span>Aprox. 1500</span></time>
+                <div class="cbp_tmicon"></div>
+                <div class="cbp_tmlabel">
+                    <h2>Quinhentismo</h2>
+                    <p>O quinhentismo corresponde ao período literário que abrange todas as manifestações literárias produzidas no Brasil na época de seu descobrimento pelos portugueses, durante o século XVI.</p>
+                    <a href="quinhentismo.html" style="color: black;"><button type="button" class="btn btn-secondary btn-lg btn-block personal" style="background-color: white;">Ir para</button></a>
+                </div>
+            </li>
+            <li>
+                <time class="cbp_tmtime"><span></span> <span>Aprox. 1600</span></time>
+                <div class="cbp_tmicon "></div>
+                <div class="cbp_tmlabel">
+                    <h2>Barroco</h2>
+                    <p>O Barroco sucedeu ao Renascimento, abrangendo do início do século XVI ao final do século XVII, estendendo-se a todas as manifestações culturais e artísticas europeias e latino-americanas. O momento final do Barroco, o Rococó é considerado um barroco exagerado e exuberante, e para alguns, a decadência do movimento.</p>
+                    <a href="barroco.html" style="color: black;"><button type="button" class="btn btn-secondary btn-lg btn-block" style="background-color: white;">Ir para</button></a>
+                </div>
+            </li>
+            <li>
+                <time class="cbp_tmtime"><span></span> <span>Aprox. 1770</span></time>
+                <div class="cbp_tmicon "></div>
+                <div class="cbp_tmlabel">
+                    <h2>Arcadismo</h2>
+                    <p>O arcadismo é uma escola literária que surgiu na Europa no final do século XVII, também denominada de setecentismo ou neoclassicismo. O nome "arcadismo" é uma referência à Arcádia, região campestre do Peloponeso, na Grécia antiga, tida como ideal de inspiração poética.</p>
+                    <a href="arcadismo.html" style="color: black;"><button type="button" class="btn btn-secondary btn-lg btn-block" style="background-color: white;">Ir para</button></a>
+                </div>
+            </li>
+            <li>
+                <time class="cbp_tmtime"><span></span> <span>Aprox. 1836</span></time>
+                <div class="cbp_tmicon "></div>
+                <div class="cbp_tmlabel">
+                    <h2>Romantismo</h2>
+                    <p>O romantismo foi um movimento artístico, político e filosófico surgido nas primeiras décadas do século XIX na Europa que durou por grande parte do século.</p>
+                    <a href="romantismo.html" style="color: black;"><button type="button" class="btn btn-secondary btn-lg btn-block" style="background-color: white;">Ir para</button></a>
+                </div>
+            </li>
+            <li>
+                <time class="cbp_tmtime"><span></span> <span>Aprox. 1880</span></time>
+                <div class="cbp_tmicon "></div>
+                <div class="cbp_tmlabel">
+                    <h2>Parnasianismo</h2>
+                    <p>Parnasianismo é uma escola literária ou um movimento literário essencialmente poético, contemporâneo do Realismo-Naturalismo. Um estilo de época que se desenvolveu na poesia a partir de 1850, na França, com o objetivo de retomar a cultura clássica.</p>
+                    <a href="parnasianismo.html" style="color: black;"><button type="button" class="btn btn-secondary btn-lg btn-block" style="background-color: white;">Ir para</button></a>
+                </div>
+            </li>
+            <li>
+                <time class="cbp_tmtime"><span></span> <span>Aprox. 1880</span></time>
+                <div class="cbp_tmicon "></div>
+                <div class="cbp_tmlabel">
+                    <h2>Realismo</h2>
+                    <p>O realismo foi um movimento artístico e literário surgido nas últimas décadas do século XIX na Europa, mais especificamente na França, em reação ao romantismo. Entre 1850 e 1900 o movimento cultural, chamado realismo, predominou na França e se estendeu pela Europa e outros continentes.</p>
+                    <a href="realismo.html" style="color: black;"><button type="button" class="btn btn-secondary btn-lg btn-block" style="background-color: white;">Ir para</button></a>
+                </div>
+            </li>
+            <li>
+                <time class="cbp_tmtime"><span></span> <span>Aprox. 1890</span></time>
+                <div class="cbp_tmicon "></div>
+                <div class="cbp_tmlabel">
+                    <h2>Simbolismo</h2>
+                    <p>Simbolismo é um movimento literário da poesia e das outras artes que surgiu na França, no final do século XIX, como oposição ao realismo, ao naturalismo e ao positivismo da época. Movido pelos ideais românticos, estendendo suas raízes à literatura, aos palcos teatrais, às artes plásticas.</p>
+                    <a href="simbolismo.html" style="color: black;"><button type="button" class="btn btn-secondary btn-lg btn-block" style="background-color: white;">Ir para</button></a>
+                </div>
+            </li>
+            <li>
+                <time class="cbp_tmtime"><span></span> <span>Aprox. 1900</span></time>
+                <div class="cbp_tmicon "></div>
+                <div class="cbp_tmlabel">
+                    <h2>Pré-modernismo</h2>
+                    <p>O pré-modernismo foi uma fase literária, ou também considerado um período sincrético histórico-literário brasileiro, que marca a transição entre o simbolismo e o movimento modernista. Em Portugal, o pré-modernismo configura o momento denominado saudosismo.</p>
+                    <a href="pre-modernismo.html" style="color: black;"><button type="button" class="btn btn-secondary btn-lg btn-block" style="background-color: white;">Ir para</button></a>
+                </div>
+            </li>
+            <li>
+                <time class="cbp_tmtime"><span></span> <span>Aprox. 1920</span></time>
+                <div class="cbp_tmicon "></div>
+                <div class="cbp_tmlabel">
+                    <h2>Modernismo</h2>
+                    <p>O modernismo brasileiro foi um amplo movimento cultural que repercutiu fortemente sobre a cena artística e a sociedade brasileira na primeira metade do século XX, sobretudo no campo da literatura e das artes plásticas.</p>
+                    <a href="modernismo.html" style="color: black;"><button type="button" class="btn btn-secondary btn-lg btn-block" style="background-color: white;">Ir para</button></a>
+                </div>
+            </li>
+        </ul> 
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted"> © 2018 Copyright Text</p>
+        </div>
+    </footer>
     <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./node_modules/popper.js/dist/popper.min.js"></script>

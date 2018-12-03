@@ -1,0 +1,14 @@
+.main{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.container2{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+.pt{
+    padding-left: 20px;
+    width: 40%;
+}

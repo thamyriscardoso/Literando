@@ -8,24 +8,28 @@
     <!--<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/sticky-footer.css">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/home.css">
     <title>Literando</title>
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
         <a class="navbar-brand" href="index.html">Literando</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="linhatempo.html">Linha do tempo</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="sobre.html">Sobre</a>
-            </li>
-            <li class="nav-item active">
-                    <a class="nav-link" href="dicas.html">Dicas Para Enem</a>
+                <li class="nav-item active">
+                <a class="nav-link" href="linhatempo.html">Linha do tempo</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item active">
+                        <a class="nav-link" href="dicas.html">Dicas Enem</a>
+                </li>
+                <li class="nav-item active" id="naologado">
+                    <a class="nav-link" href="perfil.html">Perfil</a>
                 </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -42,21 +46,7 @@
           </form>
         </div>
     </nav>
-    <div class="container">
-        <div class="text">
-            <h2>Sobre o Literando</h2>
-            <br>
-            <p class="textosobre">
-                Literando é um site ajuda para aqueles que querem estudar a literatura brasileira, mas não sabem por onde começar. Aqui você encontra diversas coisas que vão facilitar seu entendimento, melhorar sua percepção e gabaritar aquela prova que te deixa nervoso.
-                Mas se não está conseguindo se achar, não perca a calma, a gente te ajuda!
-                Nosso site possui diversas funcionalidades, a página HOME é um lugar que você pode acessar todas elas, de forma fácil e rápida, na navbar basta clicar no logo da Literando.
-                Nossa linha do tempo possui todos os momentos literários brasileiros, você pode acessa-la pela home ou se preferir basta clicar no ícone “Linha do Tempo” na navbar, ou acessar pela home, é simples e fácil. Além de conhecer a cronologia desses períodos você pode ver uma infinidade de sugestões para o conhecer, como livros, filmes e músicas, além de uma explicação revisada e conferida por formados na língua portuguesa. Mas lembre-se, a linha do tempo só está completamente disponível para aqueles que estão cadastrados no nosso site.
-                Se estiver perdido nos estudos acesse a página perfil na navbar, ou pela home, nela estarão contidos dados de seus acertos e erros nos questionários que separamos para você, além do seu progresso de estudos, tudo isso para que você aprenda com qualidade!
-                Para te acalmar antes do ENEM fizemos uma série de dicas especiais, entre elas algumas para te ajudar a lembrar do que aprendeu e manter a calma, se quiser vê-las acesse “Dicas para ENEM” na navbar, ou na home.
-            </p>
-        </div>
-    </div>
-    <div class="modal fade" id="modalogin" tabindex="-1" role="dialog"                                      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="modalogin" tabindex="-1" role="dialog"                                   aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
             <div class="modal-header">
@@ -87,7 +77,7 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
+                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: aline@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
@@ -116,7 +106,7 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
+                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: aline@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
@@ -131,15 +121,42 @@
         </div>
         </div>
     </div>
+    <div class="container">
+        <h2>Quinhentismo</h2>
+        <br><br>
+        <p>O Quinhentismo Brasileiro recebeu esse nome porque as manifestações literárias brasileiras começaram no ano de 1500.</p>
+        <br>
+        <p>Quinhentismo, fase da literatura brasileira do século XVI, tem este nome pelo fato das manifestações literárias se iniciarem no ano de 1.500, época da colonização portuguesa no Brasil. A literatura brasileira, na verdade, ainda não tinha sua identidade, a qual foi sendo formada sob a influência da literatura portuguesa e europeia em geral. Logo, não havia produção literária ligada diretamente ao povo brasileiro, mas sim obras no Brasil que davam significação aos europeus. No entanto, com o passar dos anos, as literaturas informativa e dos jesuítas, foi dando lugar a denotações da visão dos artistas brasileiros.</p>
+        <br>
+        <p>Na época da colonização brasileira, a Europa vivia seu apogeu no Renascimento, o comércio se despontava, enquanto o êxodo rural provocava um surto de urbanização. Enquanto o homem europeu se dividia entre a conquista material e a espiritual (Contrarreforma), o cidadão brasileiro encontrava no quinhentismo semelhante dicotomia: a literatura informativa, que se voltava para assuntos de natureza material (ouro, prata, ferro, madeira) feita através de cartas dos viajantes ou dos cronistas e a literatura dos jesuítas, que tentavam inserir a catequese.</p>
+        <br>
+        <p>A carta de Pero Vaz de Caminha traz a referida dicotomia claramente expressa, pois valoriza as conquistas e aventuras marítimas (literatura informativa) ao mesmo tempo que a expansão do cristianismo (literatura jesuíta).
+        A literatura dos jesuítas tinha como objetivo principal o da catequese. Este trabalho de catequizar norteou as produções literárias na poesia de devoção e no teatro inspirado nas passagens bíblicas.</p>
+        <br>
+        <p>José de Anchieta é o principal autor jesuíta da época do Quinhentismo, viveu entre os índios, pelos quais era chamado de piahy, que significa “supremo pajé branco”. Foi o autor da primeira gramática do tupi-guarani e também de várias poesias de devoção.</p>
+    </div>
+    <br>
+    <div class="container-fluid container2">
+            <div class="pt">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="imagem/oddb.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                <a href="https://www.youtube.com/watch?v=7Yiv34RQgsU"><h2>O Descobrimento do Brasil</h2></a>
+                <p>O Descobrimento do Brasil é um filme brasileiro de Humberto Mauro produzido em 1936, com trilha sonora de Heitor Vila-Lobos.</p>
+            </div>
+            <div class="pt">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="imagem/caramuru.png" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                <a href="https://www.youtube.com/watch?v=nOEuBAdzsKk"><h2>Caramuru, a invenção do Brasil</h2></a>
+                <p>Caramuru - A invenção do Brasil é um filme brasileiro de 2001, do gênero comédia, dirigido por Guel Arraes e escrito por ele e Jorge Furtado.</p>
+            </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <p class="text-muted"> © 2018 Copyright Text</p>
         </div>
     </footer>
     <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="js/main.js" type="module"></script>
 </body>
 </html>
-

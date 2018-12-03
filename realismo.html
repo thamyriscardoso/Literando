@@ -11,21 +11,24 @@
     <title>Literando</title>
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
         <a class="navbar-brand" href="index.html">Literando</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="linhatempo.html">Linha do tempo</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="sobre.html">Sobre</a>
-            </li>
-            <li class="nav-item active">
-                    <a class="nav-link" href="dicas.html">Dicas Para Enem</a>
+                <li class="nav-item active">
+                <a class="nav-link" href="linhatempo.html">Linha do tempo</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item active">
+                        <a class="nav-link" href="dicas.html">Dicas Enem</a>
+                </li>
+                <li class="nav-item active" id="naologado">
+                    <a class="nav-link" href="perfil.html">Perfil</a>
                 </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -42,21 +45,7 @@
           </form>
         </div>
     </nav>
-    <div class="container">
-        <div class="text">
-            <h2>Sobre o Literando</h2>
-            <br>
-            <p class="textosobre">
-                Literando é um site ajuda para aqueles que querem estudar a literatura brasileira, mas não sabem por onde começar. Aqui você encontra diversas coisas que vão facilitar seu entendimento, melhorar sua percepção e gabaritar aquela prova que te deixa nervoso.
-                Mas se não está conseguindo se achar, não perca a calma, a gente te ajuda!
-                Nosso site possui diversas funcionalidades, a página HOME é um lugar que você pode acessar todas elas, de forma fácil e rápida, na navbar basta clicar no logo da Literando.
-                Nossa linha do tempo possui todos os momentos literários brasileiros, você pode acessa-la pela home ou se preferir basta clicar no ícone “Linha do Tempo” na navbar, ou acessar pela home, é simples e fácil. Além de conhecer a cronologia desses períodos você pode ver uma infinidade de sugestões para o conhecer, como livros, filmes e músicas, além de uma explicação revisada e conferida por formados na língua portuguesa. Mas lembre-se, a linha do tempo só está completamente disponível para aqueles que estão cadastrados no nosso site.
-                Se estiver perdido nos estudos acesse a página perfil na navbar, ou pela home, nela estarão contidos dados de seus acertos e erros nos questionários que separamos para você, além do seu progresso de estudos, tudo isso para que você aprenda com qualidade!
-                Para te acalmar antes do ENEM fizemos uma série de dicas especiais, entre elas algumas para te ajudar a lembrar do que aprendeu e manter a calma, se quiser vê-las acesse “Dicas para ENEM” na navbar, ou na home.
-            </p>
-        </div>
-    </div>
-    <div class="modal fade" id="modalogin" tabindex="-1" role="dialog"                                      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="modalogin" tabindex="-1" role="dialog"                                   aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
             <div class="modal-header">
@@ -87,7 +76,7 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
+                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: aline@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
@@ -116,7 +105,7 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
+                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: aline@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
@@ -131,15 +120,44 @@
         </div>
         </div>
     </div>
+    <div class="container">
+        <h2>Realismo</h2>
+        <br><br>
+        <p>Influenciado pelas teorias materialistas, o Realismo surgiu na Europa, na segunda metade do século XIX. No Brasil, seu principal representante foi o escritor Machado de Assis.</p>
+        <br>
+        <p>A segunda metade do século XIX foi marcada por um período de profundas mudanças no modo de pensar e agir das pessoas. As contradições sociais começaram a aparecer em decorrência da Revolução Industrial, e todos esses fatores influenciaram as artes de um modo geral, sobretudo a literatura. O egocentrismo romântico deu lugar às correntes cientificistas que buscavam explicar fenômenos sociais, naturais e psicológicos sob o viés de teorias materialistas. A subjetividade, comum ao Romantismo e ao Simbolismo, foi substituída pela objetividade das ideias do Realismo.</p>
+        <br>
+        <p>O Realismo, o Naturalismo e o Parnasianismo apresentam aspectos comuns: o resgate do objetivismo na literatura, o gosto pelas descrições e o combate ao Romantismo. Entre os três movimentos, o Realismo foi o que buscou uma maior aproximação com a realidade ao descrever os costumes, os conflitos interiores do ser humano, as relações sociais, a crise das instituições etc. Todas essas questões eram tratadas à luz das correntes filosóficas em voga na época, sobretudo o positivismo, o determinismo e o darwinismo (essa última influenciou, principalmente, a literatura naturalista).</p>
+        <br>
+        <p>O Realismo, o Naturalismo e o Parnasianismo apresentam aspectos comuns: o resgate do objetivismo na literatura, o gosto pelas descrições e o combate ao Romantismo. Entre os três movimentos, o Realismo foi o que buscou uma maior aproximação com a realidade ao descrever os costumes, os conflitos interiores do ser humano, as relações sociais, a crise das instituições etc. Todas essas questões eram tratadas à luz das correntes filosóficas em voga na época, sobretudo o positivismo, o determinismo e o darwinismo (essa última influenciou, principalmente, a literatura naturalista).</p>
+        <br>
+        <p>● Objetivismo;
+        <br />
+        ● Linguagem culta e direta;
+        <br />
+        ● Narrativa lenta, que acompanha o tempo psicológico;
+        <br />
+        ● Descrições e adjetivaçções objetivas, com a finalidade de captar a realidade de maneira fidedigna;
+        <br />
+        ● Universalismo;
+        <br />
+        ● Sentimentos, sobretudo o amor, subordinados aos interesses sociais;
+        <br />
+        ● Herói problemático, cheio de fraquezas;
+        <br />
+        ● Não idealização da mulher.</p>
+        <br>
+        <p>Todas essas características opunham-se fortemente às características da linguagem romântica, marcada pela subjetividade e pelo individualismo. O Realismo propôs a investigação do comportamento humano e denunciou, por meio da literatura, os problemas sociais, abandonando assim a visão idealizada do Romantismo. No Brasil, o principal representante da prosa realista foi Machado de Assis, embora outros escritores também tenham produzido obras de grande relevância para o período. Foi na obra daquele que é considerado o maior escritor brasileiro de todos os tempos que o Realismo realizou-se com perfeição nos planos técnico e temático.</p>
+    </div>
     <footer class="footer">
         <div class="container">
             <p class="text-muted"> © 2018 Copyright Text</p>
         </div>
     </footer>
     <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="js/main.js" type="module"></script>
 </body>
 </html>
-

@@ -8,24 +8,28 @@
     <!--<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/sticky-footer.css">
     <link rel="stylesheet" href="css/estilo.css">
+
     <title>Literando</title>
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
         <a class="navbar-brand" href="index.html">Literando</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="linhatempo.html">Linha do tempo</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="sobre.html">Sobre</a>
-            </li>
-            <li class="nav-item active">
-                    <a class="nav-link" href="dicas.html">Dicas Para Enem</a>
+                <li class="nav-item active">
+                <a class="nav-link" href="linhatempo.html">Linha do tempo</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item active">
+                        <a class="nav-link" href="dicas.html">Dicas Enem</a>
+                </li>
+                <li class="nav-item active" id="naologado">
+                    <a class="nav-link" href="perfil.html">Perfil</a>
                 </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -42,21 +46,7 @@
           </form>
         </div>
     </nav>
-    <div class="container">
-        <div class="text">
-            <h2>Sobre o Literando</h2>
-            <br>
-            <p class="textosobre">
-                Literando é um site ajuda para aqueles que querem estudar a literatura brasileira, mas não sabem por onde começar. Aqui você encontra diversas coisas que vão facilitar seu entendimento, melhorar sua percepção e gabaritar aquela prova que te deixa nervoso.
-                Mas se não está conseguindo se achar, não perca a calma, a gente te ajuda!
-                Nosso site possui diversas funcionalidades, a página HOME é um lugar que você pode acessar todas elas, de forma fácil e rápida, na navbar basta clicar no logo da Literando.
-                Nossa linha do tempo possui todos os momentos literários brasileiros, você pode acessa-la pela home ou se preferir basta clicar no ícone “Linha do Tempo” na navbar, ou acessar pela home, é simples e fácil. Além de conhecer a cronologia desses períodos você pode ver uma infinidade de sugestões para o conhecer, como livros, filmes e músicas, além de uma explicação revisada e conferida por formados na língua portuguesa. Mas lembre-se, a linha do tempo só está completamente disponível para aqueles que estão cadastrados no nosso site.
-                Se estiver perdido nos estudos acesse a página perfil na navbar, ou pela home, nela estarão contidos dados de seus acertos e erros nos questionários que separamos para você, além do seu progresso de estudos, tudo isso para que você aprenda com qualidade!
-                Para te acalmar antes do ENEM fizemos uma série de dicas especiais, entre elas algumas para te ajudar a lembrar do que aprendeu e manter a calma, se quiser vê-las acesse “Dicas para ENEM” na navbar, ou na home.
-            </p>
-        </div>
-    </div>
-    <div class="modal fade" id="modalogin" tabindex="-1" role="dialog"                                      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="modalogin" tabindex="-1" role="dialog"                                   aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
             <div class="modal-header">
@@ -87,7 +77,7 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
+                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: aline@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
@@ -116,7 +106,7 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
+                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: aline@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
@@ -131,15 +121,41 @@
         </div>
         </div>
     </div>
+    <div class="container">
+        <h2>Arcadismo</h2>
+        <br><br>
+        <p>O Arcadismo se inicia no início do ano de 1700 e por isso recebe o nome também de Setecentismo, ou ainda neoclassicismo. Esta última denominação surgiu do fato dos autores do período imitarem, não de uma forma pura, mas alguns aspectos da antiguidade greco-romana ou o chamado Classicismo, e também os escritores do Renascimento, os quais vieram logo após a idade clássica. O classicismo compreende a época literária do Renascimento, no qual o homem tem a visão antropocêntrica do mundo, ou seja, o homem como centro de todas as coisas. Os renascentistas prezavam as obras clássicas, já que tinham a convicção de que a arte tinha alcançado sua perfeição. Assim como os renascentistas, os escritores árcades pretendiam retomar o estilo clássico, contudo com uma nova maneira, denominada de Neoclássica, de observar as considerações artísticas abordadas naquele período, como a razão e a ciência, conceitos oriundos do Iluminismo.</p>
+        <br>
+        <p>O Iluminismo é determinado pela revolução intelectual ocasionada por volta dos séculos XVII e XVIII, o qual trazia como lema: liberdade, igualdade e fraternidade, o que influenciou os pensamentos artísticos da época na Europa, e principalmente a Revolução Francesa, a independência das colônias inglesas da América Anglo-Saxônica e no Brasil, a Inconfidência Mineira.</p>
+        <br>
+        <p>O novo modo de analisar a cientificidade e a racionalidade da época árcade fugia das convenções artísticas da época, já que os escritores retomam as características clássicas, como: bucolismo (busca de uma vida simples, pastoril), exaltação da natureza (refúgio poético, em oposição à vida urbana), pacificidade amorosa (relacionamentos tranquilos), a mitologia pagã, clareza na escrita com utilização de períodos curtos e versos sem rima. Os poetas árcades são frequentemente citados como fingidores poéticos, pois escrevem sobre temas que não correspondem com a realidade do período histórico, visto anteriormente.</p>
+        <br>
+        <p>Um dos principais escritores árcades foi o poeta latino Horácio, que viveu entre 68 a.C. e 8 a.C., e foi influenciador do pensamento do “carpe diem”, viver agora, desfrutar do presente, adotado pelo Arcadismo e permanente até os dias de hoje.</p>
+        <br>
+        <p>Os principais autores do Arcadismo brasileiro são: Tomás Antônio Gonzaga, Cláudio Manuel da Costa e Santa Rita Durão.</p>
+    </div>
+    <div class="container-fluid container2">
+        <div class="pt">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="imagem/tiradentes.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+            <a href="https://www.youtube.com/watch?v=34SxZ_Q9HDc"><h2>Arte Barroca</h2></a>
+            <p>Tiradentes é um filme brasileiro de 1999, do gênero drama biográfico-histórico, dirigido por Oswaldo Caldeira.
+            O filme foi produzido por Oswaldo Caldeira Produções Cinematográficas e Paula Martinez Mello; o roteiro é de Oswaldo Caldeira; a música de Wagner Tiso; a direção da fotografia de Antônio Luiz Mendes; a direção de arte, cenografia e figurino de Anísio Medeiros, e a edição de Amauri Alves.</p>
+        </div>
+        <div class="pt">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="imagem/incon.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+            <a href="https://www.youtube.com/watch?v=Fw1E07jyTDk"><h2>Os Inconfidentes</h2></a>
+            <p>Os inconfidentes é uma co-produção brasileira e italiana de 1972, do gênero drama histórico, dirigida por Joaquim Pedro de Andrade. Em novembro de 2015 o filme entrou na lista feita pela Associação Brasileira de Críticos de Cinema (Abraccine) dos 100 melhores filmes brasileiros de todos os tempos.[</p>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <p class="text-muted"> © 2018 Copyright Text</p>
         </div>
     </footer>
     <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="js/main.js" type="module"></script>
 </body>
 </html>
-
