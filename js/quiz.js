@@ -1,3 +1,15 @@
+import {auth} from './firebase.js';
+
+auth.onAuthStateChanged(function(user) {
+    if (user) {
+        document.querySelector('#logado').style = 'display: none';
+        document.querySelector('#btnSair').style = 'display: block';
+        console.log('logado');
+    } else {
+        console.log('nao logado');
+    }
+});
+
 (function() {
     function buildQuiz() {
       const output = [];
@@ -50,10 +62,42 @@
       while(c<=numErrado){
         quisjs.innerHTML = paragraph;
         c++;
+
       }
       botaojs.innerHTML = "";
       resultadojs.innerHTML = `<hr>Você acertou ${porcentagem}% <hr>`;
       botaojs.innerHTML = `<button id="enviar" onclick="window.location.href='perfil.html'">Volte para o Perfil</button>`;
+
+      //Tem algo importante aqui      
+      var admin = require("firebase-admin");
+
+      // Fetch the service account key JSON file contents
+      var serviceAccount = require("path/to/AIzaSyD7d-4Cgp3ErDO47G27ZKmYoUQjkCWT2FA.json");
+
+      // Initialize the app with a service account, granting admin privileges
+      admin.initializeApp({
+        credential: admin.credential.cert(serviceAccount),
+        databaseURL: "https://projetolinguaportuguesa-3c93d.firebaseio.com/"
+      });
+
+      // Get a database reference to our posts
+      var db = admin.database();
+      var ref = db.ref("server/saving-data/projetolinguaportuguesa-3c93d/user");
+      var ref2 = db.ref("server/saving-data/fireblog");
+
+      // Attach an asynchronous callback to read the data at our posts reference
+      ref.on("value", function(snapshot) {
+      let valores = snapshot.val();
+      for(let linha in valores){
+      if(linha.email === getIdUsuario()){
+        var usersRef = ref2.child("users");
+        usersRef.child(linha.constructor.name+"").update({"score":(porcentagem+""));
+      }
+      }
+      }, function (errorObject) {
+        console.log("The read failed: " + errorObject.code);
+      });
+      //Aqui termina essa coisa importante
     }
   
     const botaojs = document.getElementById("botão")
@@ -71,7 +115,7 @@
         },
         respostacorreta: "d",
       },
-      {
+      { 
         questao: "Do grupo 3 ao grupo 12, encontramos os:",
         respostas: {
           a: "Metais Alcalinos",
@@ -167,4 +211,10 @@
   
     enviarjs.addEventListener("click", mostrarResultado);
   })();
-  
+  const getIdUsuario = function() {
+    return new Promise(function(resolve) {
+        auth.onAuthStateChanged(function(user) {
+            resolve(user.email);
+        });
+    });
+};
