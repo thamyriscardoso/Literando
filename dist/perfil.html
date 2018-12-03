@@ -45,8 +45,16 @@
           </form>
         </div>
     </nav>
-    
-  
+    <section>
+            <div class="perfil">
+                    <h3>Dados próprios</h3>
+                    <h3 class="nomeperfil">Nome: ********</h3>
+            </div>
+    </section>
+    <hr>
+    <div>
+        <button id="enviar" onclick="window.location.href='quiz.html'">Quiz</button>
+    </div>
     <div class="modal fade" id="modalogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -78,15 +86,15 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
+                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: aline@gmail.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
-                        <input type="password" class="form-control" id="loginSenha" placeholder="*********">
+                        <input type="password" class="form-control" id="loginSenha" placeholder="******">
                     </div>
                     <div class="form-submit">
                         <button type="submit" class="btn btn-primary" id="entrar">Entrar</button>
-                        <span id="msgError">*Email e/ou Senha incorretos.</span>
+                        <span style="display:none" id="msgError">*Email e/ou Senha incorretos.</span>
                         <button id="close" type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
                     </div>
                 </form>
@@ -107,33 +115,25 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
+                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: aline@gmail.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
-                        <input type="password" class="form-control" id="cadastroSenha" placeholder="*********">
+                        <input type="password" class="form-control" id="cadastroSenha" placeholder="******">
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btn-primary" id="cadastrar">Cadastrar-se</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                <span style="display:none" id="msgErrorCad">*Email ou senha inválidos.</span>
+                <div id="cadBotoes">
+                    <button type="submit" class="btn btn-primary" id="cadastrar">Cadastrar-se</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                </div>
+                
             </div>
         </div>
         </div>
     </div>
-
-    <section>
-            <div class="perfil">
-                    <h3>Dados próprios</h3>
-                    <h3 class="nomeperfil">Nome: ********</h3>
-            </div>
-        </section>
-                <hr>
-
-                <div>
-                    <button id="enviar" onclick="window.location.href='quiz.html'">Quiz</button>
-                </div>
 
     <footer class="footer">
         <div class="container">
