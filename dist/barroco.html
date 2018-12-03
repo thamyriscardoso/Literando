@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/bootstrap.min.22dd864f.css">
+    <link rel="stylesheet" href="/sticky-footer.c2705bb4.css">
+    <link rel="stylesheet" href="/estilo.946f1a47.css">
+    <link rel="stylesheet" href="/home.f0786ff0.css">
+    <title>Literando</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+        <a class="navbar-brand" href="/index.html">Literando</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="/linhatempo.html">Linha do tempo</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item active">
+                        <a class="nav-link" href="/dicas.html">Dicas Enem</a>
+                </li>
+                <li class="nav-item active" id="naologado">
+                    <a class="nav-link" href="/perfil.html">Perfil</a>
+                </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+              <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active" id="btnLogado">
+                        <button id="logado" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalogin">
+                                Login
+                        </button>
+                        <button style="display:none" id="btnSair" type="button" class="btn btn-primary">
+                                Sair
+                        </button>    
+                    </li>
+                </ul>
+          </form>
+        </div>
+    </nav>
+    <div class="modal fade" id="modalogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+            </div>
+            <div class="modal-body d-flex flex-column">
+                <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalEntrar">
+                    Entrar
+                </button>
+                <hr>
+                <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalCadastro">
+                    Cadastrar-se
+                </button>
+            </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Voltar</button>
+        </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalEntrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Entrar</h5>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: aline@mail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Senha</label>
+                        <input type="password" class="form-control" id="loginSenha" placeholder="*********">
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary" id="entrar">Entrar</button>
+                        <span id="msgError">*Email e/ou Senha incorretos.</span>
+                        <button id="close" type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">Cadastre-se</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: aline@mail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Senha</label>
+                        <input type="password" class="form-control" id="cadastroSenha" placeholder="*********">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" id="cadastrar">Cadastrar-se</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Barroco</h2>
+         <br><br>
+        <p>Apesar de não possuir características unânimes, o Barroco caracterizou os artistas e escritores do ano de 1600 a 1700.</p>
+        <br>
+        <p> O Barroco começa a partir do ano de 1600 e todas as manifestações entre essa data e 1700 estão inseridas em um contexto assimétrico e rebuscado das obras barrocas. Segundo alguns autores, a palavra “barroco” deriva da palavra “verruca” do latim, que significa elevação de terreno em superfície lisa. Toda pedra preciosa que não tinha forma arredondada era chamada de barrueca. Logo após, toda e qualquer coisa que possuía forma bizarra, que fugia do normal, era chamada de baroque. O poeta italiano Giosuè Carducci foi quem, em 1860, adjetivou o estilo da época dos Seiscentos, referindo-se às manifestações artísticas ocorridas a partir do ano de 1600, como sendo barroco. Então, apesar de não possuir características unânimes em todas as obras, o barroco passou a ser a denominação dos artistas e escritores da referida época.</p>
+        <br>
+        <p>O Barroco ou Seiscentismo teve início em Portugal com a unificação da Península Ibérica, fato que acarreta ao período intensa influência espanhola, e também faz surgir outra denominação para o período, Escola Espanhola. No Brasil, o Barroco teve início em 1601, com a publicação do poema épico Prosopopeia, de Bento Teixeira, o qual introduz em definitivo o modelo da poesia camoniana na literatura brasileira.</p>
+        <br>
+        <p>Portugal estava em decadência nos últimos vinte e cinco anos do século XVI, o comércio tornava Lisboa a capital da pimenta, no entanto, a agricultura estava abandonada e as colônias portuguesas, inclusive o Brasil, não deram riquezas imediatas. Pouco tempo depois, com o desaparecimento de D. Sebastião, Filipe II da Espanha consolidou a unificação da Península Ibérica, o que possibilitou e favoreceu o avanço da Companhia de Jesus em nome da Contrarreforma, o que ocasionou a permanência de uma cultura praticamente medieval na península, enquanto o restante da Europa vivia as descobertas científicas de Galileu, Kepler e Newton, por exemplo.</p>
+        <br>
+        <p>É durante este quadro cultural europeu que o estilo Barroco surgiu, em meio à crise dos valores renascentistas, ocasionada pelas lutas religiosas e dificuldades econômicas. O contexto assimétrico e rebuscado do barroco, citado anteriormente, é reflexo do conflito do homem entre as coisas terrenas e as coisas celestiais, o homem e Deus, antropocentrismo (homem no centro) e o teocentrismo (Deus no centro), pecado e o perdão, enfim, constantes dicotomias.</p>
+        <br>
+        <p>No Barroco podemos classificar dois estilos literários: O Cultismo e o Conceptismo.</p>
+        <br>
+        <p>• Cultismo – caracterizado pela linguagem culta, rebuscada, ligado à forma, jogo de palavras, com influência do poeta espanhol Luís de Gôngora, e por isso, chamado também de Gongorismo.
+        <br>
+        • Conceptismo – caracterizado pelo jogo de ideias, ligado ao conteúdo, raciocínio lógico, com influência do espanhol Quevedo, e por isso, chamado também de Quevedismo.</p>
+        <br>
+        <p>No Barroco brasileiro destacam-se os autores: Padre Antônio Vieira com suas obras de profecias, cartas e sermões e Gregório de Matos Guerra, essencialmente poético.</p>
+    </div>
+    <br>
+    <div class="container-fluid container2">
+        <div class="pt">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="/barroco.dd2ae037.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+            <a href="https://www.youtube.com/watch?v=M6umgiXXQsA"><h2>Arte Barroca</h2></a>
+            <p>A arte barroca surgiu em meados do século XVIII, na Itália. A igreja católica adotou o formato artístico em suas construções e propagou a nova onda cultural por vários países do continente europeu.</p>
+        </div>
+        <div class="pt">
+            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" src="/brinco.560e7741.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+            <a href="https://www.youtube.com/watch?v=VbQQ1MjgD5s"><h2>Moça com Brinco de Pérola</h2></a>
+            <p>Girl with a Pearl Earring (br: Moça com Brinco de Pérola / pt: Rapariga com Brinco de Pérola) é um filme de 2003 produzido pelo Reino Unido e Luxemburgo, do gênero drama, dirigido por Peter Webber. O roteiro é uma adaptação feita por Olivia Hetreed do romance de mesmo nome de Tracy Chevalier.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted"> © 2018 Copyright Text</p>
+        </div>
+    </footer>
+    <script src="/jquery.slim.min.8bdc4b60.js"></script>
+    <script src="/popper.min.02670db2.js"></script>
+    <script src="/bootstrap.min.70bc9b52.js"></script>
+    <script src="/handlebars.min.fcfe2ae2.js"></script>
+    <script src="/main.90efbbb3.js" type="module"></script>
+</body>
+</html>
