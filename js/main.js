@@ -9,13 +9,14 @@ const perfil = document.querySelector('#naologado');
 perfil.addEventListener('click',function(e){
     e.preventDefault();
     auth.onAuthStateChanged(function(user) {
-    if (user) {
-        window.location.replace('perfil.html');
-        console.log('logado');
-    } else {
-        window.location.replace('cadastro.html');
-        console.log('nao logado');
-    }
+        if (user) {
+            window.location.replace('perfil.html');
+            console.log('logado');
+        } else {
+            window.location.replace('cadastro.html');
+            console.log('nao logado');
+        }
+    });
 });
 
 btnCadastro.addEventListener('click', function(e) {
