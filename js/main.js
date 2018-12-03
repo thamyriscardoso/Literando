@@ -13,7 +13,7 @@ perfil.addEventListener('click',function(e){
             window.location.replace('perfil.html');
             console.log('logado');
         } else {
-            window.location.replace('cadastro.html');
+            window.location.replace('entrar.html');
             console.log('nao logado');
         }
     });
@@ -25,13 +25,21 @@ btnCadastro.addEventListener('click', function(e) {
     const inputSenha = document.querySelector('#cadastroSenha').value;
     cadastro(inputEmail, inputSenha);
 });
+
 btnLogin.addEventListener('click', function(e) {
     e.preventDefault();
     const inputEmail = document.querySelector('#loginEmail').value;
     const inputSenha = document.querySelector('#loginSenha').value;
     login(inputEmail, inputSenha);
 });
+
+btnSair.addEventListener('click',function(e){
+    window.location.replace('index.html');
+});
+
 btnSair.addEventListener('click', logout);
+
 btnClose.addEventListener('click', function() {
     document.querySelector('#msgError').style = 'display:none';
 });
+
