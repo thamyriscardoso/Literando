@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="/bootstrap.min.22dd864f.css">
     <link rel="stylesheet" href="/sticky-footer.c2705bb4.css">
     <link rel="stylesheet" href="/estilo.946f1a47.css">
-    <link rel="stylesheet" href="/home.f0786ff0.css">
+    <link rel="stylesheet" href="/style.6cc9749e.css">
     <title>Literando</title>
-<script src="/bootstrap.min.22dd864f.js"></script><script src="/sticky-footer.c2705bb4.js"></script><script src="/estilo.946f1a47.js"></script><script src="/home.f0786ff0.js"></script></head>
+</head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
         <a class="navbar-brand" href="/index.html">Literando</a>
@@ -18,18 +18,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                <a class="nav-link" href="/linhatempo.html">Linha do tempo</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/sobre.html">Sobre</a>
-                </li>
-                <li class="nav-item active">
-                        <a class="nav-link" href="/dicas.html">Dicas Enem</a>
-                </li>
-                <li class="nav-item active" id="naologado">
-                    <a class="nav-link" href="/perfil.html">Perfil</a>
-                </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/linhatempo.html">Linha do tempo</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item active">
+                    <a class="nav-link" href="/dicas.html">Dicas Enem</a>
+            </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
               <ul class="navbar-nav mr-auto">
@@ -45,6 +42,8 @@
           </form>
         </div>
     </nav>
+    
+  
     <div class="modal fade" id="modalogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -61,7 +60,7 @@
                 </button>
             </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-lg-4" data-dilg-4iss="modal">Voltar</button>
+            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Voltar</button>
         </div>
             </div>
         </div>
@@ -76,7 +75,7 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: aline@gmail.com">
+                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
@@ -84,8 +83,8 @@
                     </div>
                     <div class="form-submit">
                         <button type="submit" class="btn btn-primary" id="entrar">Entrar</button>
-                        <span style="display:none" id="msgError">*Email e/ou Senha incorretos.</span>
-                        <button id="close" type="button" class="btn btn-secondary" data-dilg-4iss="modal">Voltar</button>
+                        <span id="msgError">*Email e/ou Senha incorretos.</span>
+                        <button id="close" type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
                     </div>
                 </form>
             </div>
@@ -97,7 +96,7 @@
         <div class="modal-content">
             <div class="modal-header">
             <h5 class="modal-title">Cadastre-se</h5>
-            <button type="button" class="close" data-dilg-4iss="modal" aria-label="Close">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
@@ -105,7 +104,7 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: aline@gmail.com">
+                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
@@ -115,50 +114,35 @@
             </div>
             <div class="modal-footer">
                 <button type="submit" class="btn btn-primary" id="cadastrar">Cadastrar-se</button>
-                <button type="button" class="btn btn-secondary" data-dilg-4iss="modal">Voltar</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
             </div>
         </div>
         </div>
     </div>
 
-    <main role="main">
-        <section class="jumbotron text-center main">
-          <div class="container">
-            <h1 class="jumbotron-heading">Bem vindo(a) ao Literando!</h1>
-            <p class="lead text-muted">Literando é um site de ajuda para aqueles que querem estudar a literatura brasileira, mas não sabem por onde começar. Nele você encontra diversas informações que vão facilitar seu entendimento, melhorar sua percepção literária e gabaritar aquela prova super
-            importante!
-            </p>
-            <p>
-              <a href="/sobre.html" class="btn btn-primary my-2">Saiba quem somos</a>
-            </p>
-          </div>
-        </section> 
-        <div class="container-fluid container2">
-            <div class="pt">
-                <h2>Dicas para o ENEM</h2>
-                <p>Nós sabemos que para ser aprovado no ENEM você precisa estudar muito bem, mas para te ajudar fizemos algumas dicas de gramtática que podem te ajudar, dê uma olhadinha!</p>
-                <p>
-                    <a href="/dicas.html" class="btn btn-primary my-2">Ir para</a>
-                </p>
+        <div class="container">
+            <div class="all">
+                <div id="quiz">                </div>
+                <div id="resultado"></div>
+                <div id="botão">
+                    <button id="enviar" href="perfil.html">Enviar Quiz</button>
+                </div>
             </div>
-            <div class="pt">
-                <h2>Linha do Tempo</h2>
-                <p>Você também é daquelas pessoas que se enrola quando estuda a literatura brasileira? Aqui está a solução, fizemos uma linha do tempo com todos períodos para que você nunca mais se perca, dê uma olhadinha!</p>
-                <p>
-                    <a href="/linhatempo.html" class="btn btn-primary my-2">Ir para</a>
-                </p>
-            </div>
+            <script src="/quiz.ebb6ad08.js"></script>
         </div>
-      </main>
-      <br>
+
+
+
+
+
     <footer class="footer">
         <div class="container">
             <p class="text-muted"> © 2018 Copyright Text</p>
         </div>
     </footer>
     <script src="/jquery.slim.min.8bdc4b60.js"></script>
-    <script src="/bootstrap.min.70bc9b52.js"></script>
     <script src="/popper.min.02670db2.js"></script>
-    <script src="/main.90efbbb3.js" type="module"></script>
+    <script src="/bootstrap.min.70bc9b52.js"></script>
+    <script src="/handlebars.min.fcfe2ae2.js"></script>
 </body>
 </html>

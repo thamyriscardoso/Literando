@@ -10,21 +10,24 @@
     <title>Literando</title>
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
         <a class="navbar-brand" href="/index.html">Literando</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/linhatempo.html">Linha do tempo</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/sobre.html">Sobre</a>
-            </li>
-            <li class="nav-item active">
-                    <a class="nav-link" href="/dicas.html">Dicas Para Enem</a>
+                <li class="nav-item active">
+                <a class="nav-link" href="/linhatempo.html">Linha do tempo</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item active">
+                        <a class="nav-link" href="/dicas.html">Dicas Enem</a>
+                </li>
+                <li class="nav-item active" id="naologado">
+                    <a class="nav-link" href="/perfil.html">Perfil</a>
                 </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -41,20 +44,6 @@
           </form>
         </div>
     </nav>
-    <div class="container">
-        <div class="text">
-            <h2>Sobre o Literando</h2>
-            <br>
-            <p class="textosobre">
-                Literando é um site ajuda para aqueles que querem estudar a literatura brasileira, mas não sabem por onde começar. Aqui você encontra diversas coisas que vão facilitar seu entendimento, melhorar sua percepção e gabaritar aquela prova que te deixa nervoso.
-                Mas se não está conseguindo se achar, não perca a calma, a gente te ajuda!
-                Nosso site possui diversas funcionalidades, a página HOME é um lugar que você pode acessar todas elas, de forma fácil e rápida, na navbar basta clicar no logo da Literando.
-                Nossa linha do tempo possui todos os momentos literários brasileiros, você pode acessa-la pela home ou se preferir basta clicar no ícone “Linha do Tempo” na navbar, ou acessar pela home, é simples e fácil. Além de conhecer a cronologia desses períodos você pode ver uma infinidade de sugestões para o conhecer, como livros, filmes e músicas, além de uma explicação revisada e conferida por formados na língua portuguesa. Mas lembre-se, a linha do tempo só está completamente disponível para aqueles que estão cadastrados no nosso site.
-                Se estiver perdido nos estudos acesse a página perfil na navbar, ou pela home, nela estarão contidos dados de seus acertos e erros nos questionários que separamos para você, além do seu progresso de estudos, tudo isso para que você aprenda com qualidade!
-                Para te acalmar antes do ENEM fizemos uma série de dicas especiais, entre elas algumas para te ajudar a lembrar do que aprendeu e manter a calma, se quiser vê-las acesse “Dicas para ENEM” na navbar, ou na home.
-            </p>
-        </div>
-    </div>
     <div class="modal fade" id="modalogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -86,7 +75,7 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
+                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: aline@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
@@ -115,7 +104,7 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
+                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: aline@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
@@ -130,15 +119,26 @@
         </div>
         </div>
     </div>
+    <div class="container">
+        <h2>Modernismo</h2>
+        <br><br>
+        <p>Principal movimento literário do século XX, o Modernismo rompeu com a tradição clássica e deu início à formação de uma identidade genuinamente brasileira na literatura.</p>
+        <br>
+        <p>É inestimável o legado que o Modernismo deixou para o campo das artes no Brasil. Grande movimento artístico que eclodiu no final da segunda década do século XX, foi responsável por profundas transformações nas mais diversas manifestações artísticas, entre elas, a literatura. Ruptura com o passado, experimentalismo, transgressão dos cânones literários e a busca por uma literatura que falasse do Brasil para os brasileiros, longe da cultura europeizante, são elementos que nortearam o programa modernista.</p>
+        <br>
+        <p>Impossível falar sobre o Modernismo brasileiro sem citar a Semana de Arte Moderna de 1922, evento realizado em São Paulo que representou um divisor de águas em nossa cultura. Embora não tenha sido o começo do movimento, haja vista que o processo de transformação de nossa arte iniciara no início do século XX influenciado pelas vanguardas europeias, a Semana, que aconteceu entre os dias 13 e 18 de fevereiro de 1922, aproximou e apresentou os principais nomes do movimento e chamou a atenção dos meios artísticos de todo país para o debate em torno das novas questões estéticas propostas por seus representantes. Entre seus principais organizadores, Guilherme de Almeida, Paulo Prado, Godofredo Silva Telles, Mário e Oswald de Andrade; esses dois últimos formaram, com o principal poeta modernista, Manuel Bandeira, aquela que ficou imortalizada como a tríade modernista, responsável por definir os novos parâmetros das letras brasileiras.</p>
+        <br>
+        <p>O Modernismo brasileiro é tradicionalmente dividido em três diferentes fases: a primeira fase modernista, também conhecida como fase heroica; a segunda fase modernista, representada pela poesia e pelo romance de 1930, e a terceira fase modernista (alguns críticos literários consideram os escritores da última fase como pós-modernos), também conhecida como a geração de 45. Graças a nomes como Manuel Bandeira, Mário e Oswald de Andrade, Carlos Drummond de Andrade, Graciliano Ramos, Guimarães Rosa, Cecília Meireles, Murilo Mendes, Clarice Lispector, João Cabral de Melo Neto, entre outros, a literatura brasileira pôde, de fato, estabelecer-se como uma manifestação artística genuinamente brasileira, manifestação que contribuiu para a formação de nossa identidade cultural.</p>
+    </div>
     <footer class="footer">
         <div class="container">
             <p class="text-muted"> © 2018 Copyright Text</p>
         </div>
     </footer>
     <script src="/jquery.slim.min.8bdc4b60.js"></script>
-    <script src="/bootstrap.min.70bc9b52.js"></script>
     <script src="/popper.min.02670db2.js"></script>
+    <script src="/bootstrap.min.70bc9b52.js"></script>
+    <script src="/handlebars.min.fcfe2ae2.js"></script>
     <script src="/main.90efbbb3.js" type="module"></script>
 </body>
 </html>
-

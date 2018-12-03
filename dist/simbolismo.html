@@ -10,21 +10,24 @@
     <title>Literando</title>
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
         <a class="navbar-brand" href="/index.html">Literando</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/linhatempo.html">Linha do tempo</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/sobre.html">Sobre</a>
-            </li>
-            <li class="nav-item active">
-                    <a class="nav-link" href="/dicas.html">Dicas Para Enem</a>
+                <li class="nav-item active">
+                <a class="nav-link" href="/linhatempo.html">Linha do tempo</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item active">
+                        <a class="nav-link" href="/dicas.html">Dicas Enem</a>
+                </li>
+                <li class="nav-item active" id="naologado">
+                    <a class="nav-link" href="/perfil.html">Perfil</a>
                 </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -41,20 +44,6 @@
           </form>
         </div>
     </nav>
-    <div class="container">
-        <div class="text">
-            <h2>Sobre o Literando</h2>
-            <br>
-            <p class="textosobre">
-                Literando é um site ajuda para aqueles que querem estudar a literatura brasileira, mas não sabem por onde começar. Aqui você encontra diversas coisas que vão facilitar seu entendimento, melhorar sua percepção e gabaritar aquela prova que te deixa nervoso.
-                Mas se não está conseguindo se achar, não perca a calma, a gente te ajuda!
-                Nosso site possui diversas funcionalidades, a página HOME é um lugar que você pode acessar todas elas, de forma fácil e rápida, na navbar basta clicar no logo da Literando.
-                Nossa linha do tempo possui todos os momentos literários brasileiros, você pode acessa-la pela home ou se preferir basta clicar no ícone “Linha do Tempo” na navbar, ou acessar pela home, é simples e fácil. Além de conhecer a cronologia desses períodos você pode ver uma infinidade de sugestões para o conhecer, como livros, filmes e músicas, além de uma explicação revisada e conferida por formados na língua portuguesa. Mas lembre-se, a linha do tempo só está completamente disponível para aqueles que estão cadastrados no nosso site.
-                Se estiver perdido nos estudos acesse a página perfil na navbar, ou pela home, nela estarão contidos dados de seus acertos e erros nos questionários que separamos para você, além do seu progresso de estudos, tudo isso para que você aprenda com qualidade!
-                Para te acalmar antes do ENEM fizemos uma série de dicas especiais, entre elas algumas para te ajudar a lembrar do que aprendeu e manter a calma, se quiser vê-las acesse “Dicas para ENEM” na navbar, ou na home.
-            </p>
-        </div>
-    </div>
     <div class="modal fade" id="modalogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -86,7 +75,7 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
+                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: aline@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
@@ -115,7 +104,7 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
+                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: aline@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
@@ -130,15 +119,45 @@
         </div>
         </div>
     </div>
+    <div class="container">
+        <h2>Simbolismo</h2>
+        <br><br>
+        <p>Surgido na Europa na segunda metade do século XIX, o Simbolismo rejeitava o materialismo e propunha a retomada de elementos da literatura romântica.</p>
+        <br>
+        <p>O Simbolismo surgiu na Europa na segunda metade do século XIX em resposta ao cientificismo, tendência intelectual de matriz positivista que preconizava a adoção do método científico para a investigação de todas as áreas do saber e da cultura. Em resposta a esse materialismo cientificista, os escritores simbolistas buscaram o resgate de certos valores do Romantismo que foram esquecidos pelo Realismo. De acordo com a proposta simbolista, a arte e a literatura não poderiam ser retratadas apenas sob o ponto de vista da realidade.</p>
+        <br>
+        <p>No Brasil, as primeiras manifestações simbolistas já eram sentidas desde o final da década de 80 do século XIX. Aqui, o Simbolismo ficou à margem do Parnasianismo (ao contrário do que aconteceu na Europa), o que não impediu que esse importante movimento literário deixasse uma grande contribuição para a história da literatura brasileira. Seu marco introdutório foi registrado em 1893 com a publicação das obras Missal (prosa) e Broquéis (poesia), ambas de Cruz e Sousa, considerado o maior autor simbolista brasileiro. Além de Cruz e Sousa, destacaram-se Alphonsus de Guimaraens e Pedro Kilkerry.</p>
+        <br>
+        <p>Estão, entre as principais características da linguagem simbolista:</p>
+        <br>
+        <p>● Subjetivismo;
+        <br>
+        ● Linguagem vaga, fluida, que preza pela sugestão;
+        <br>
+        ● Cultivo de formas fixas para o poema, especialmente do soneto;
+        <br>
+        ● Antimaterialismo;
+        <br>
+        ● Misticismo, religiosidade;
+        <br>
+        ● Pessimismo, dor de existir;
+        <br>
+        ● Retomada de elementos do Romantismo;
+        <br>
+        ● Abundância de metáforas e figuras sonoras;
+        <br>
+        ● Interesse pelas zonas profundas da mente humana e pela loucura.</p>
+        
+    </div>
     <footer class="footer">
         <div class="container">
             <p class="text-muted"> © 2018 Copyright Text</p>
         </div>
     </footer>
     <script src="/jquery.slim.min.8bdc4b60.js"></script>
-    <script src="/bootstrap.min.70bc9b52.js"></script>
     <script src="/popper.min.02670db2.js"></script>
+    <script src="/bootstrap.min.70bc9b52.js"></script>
+    <script src="/handlebars.min.fcfe2ae2.js"></script>
     <script src="/main.90efbbb3.js" type="module"></script>
 </body>
 </html>
-
