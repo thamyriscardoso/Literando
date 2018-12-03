@@ -8,7 +8,6 @@
     <!--<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/sticky-footer.css">
     <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/style.css">
     <title>Literando</title>
 </head>
 <body>
@@ -69,33 +68,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="modalEntrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Entrar</h5>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Senha</label>
-                        <input type="password" class="form-control" id="loginSenha" placeholder="*********">
-                    </div>
-                    <div class="form-submit">
-                        <button type="submit" class="btn btn-primary" id="entrar">Entrar</button>
-                        <span id="msgError">*Email e/ou Senha incorretos.</span>
-                        <button id="close" type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    </div>
-    <div class="modal fade" id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div id="modalCadastro" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -118,24 +91,10 @@
             </div>
             <div class="modal-footer">
                 <button type="submit" class="btn btn-primary" id="cadastrar">Cadastrar-se</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
             </div>
         </div>
         </div>
     </div>
-
-    <section>
-            <div class="perfil">
-                    <h3>Dados próprios</h3>
-                    <h3 class="nomeperfil">Nome: ********</h3>
-            </div>
-        </section>
-                <hr>
-
-                <div>
-                    <button id="enviar" onclick="window.location.href='quiz.html'">Quiz</button>
-                </div>
-
     <footer class="footer">
         <div class="container">
             <p class="text-muted"> © 2018 Copyright Text</p>

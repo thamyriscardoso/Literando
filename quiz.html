@@ -4,7 +4,8 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/sticky-footer.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/style.css">
@@ -42,17 +43,9 @@
           </form>
         </div>
     </nav>
-    <div class="container">
-        <div class="all">
-            <div id="quiz"></div>
-            <div id="resultado"></div>
-            <div id="botão">
-                <button id="enviar" href="perfil.html">Enviar Quiz</button>
-            </div>
-        </div>
-        <script src="js/quiz.js"></script>
-    </div>
-    <div class="modal fade" id="modalogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    
+  
+    <div class="modal fade" id="modalogin" tabindex="-1" role="dialog"                                      aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
             <div class="modal-header">
@@ -83,15 +76,15 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: aline@gmail.com">
+                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
-                        <input type="password" class="form-control" id="loginSenha" placeholder="******">
+                        <input type="password" class="form-control" id="loginSenha" placeholder="*********">
                     </div>
                     <div class="form-submit">
                         <button type="submit" class="btn btn-primary" id="entrar">Entrar</button>
-                        <span style="display:none" id="msgError">*Email e/ou Senha incorretos.</span>
+                        <span id="msgError">*Email e/ou Senha incorretos.</span>
                         <button id="close" type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
                     </div>
                 </form>
@@ -112,25 +105,37 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: aline@gmail.com">
+                        <input type="email" class="form-control" id="cadastroEmail" aria-describedby="emailHelp" placeholder="ex: clarisbadeu.costa69@mail.com">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Senha</label>
-                        <input type="password" class="form-control" id="cadastroSenha" placeholder="******">
+                        <input type="password" class="form-control" id="cadastroSenha" placeholder="*********">
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
-                <span style="display:none" id="msgErrorCad">*Email ou senha inválidos.</span>
-                <div id="cadBotoes">
-                    <button type="submit" class="btn btn-primary" id="cadastrar">Cadastrar-se</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
-                </div>
-                
+                <button type="submit" class="btn btn-primary" id="cadastrar">Cadastrar-se</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
             </div>
         </div>
         </div>
     </div>
+
+        <div class="container">
+            <div class="all">
+                <div id="quiz">                </div>
+                <div id="resultado"></div>
+                <div id="botão">
+                    <button id="enviar" href="perfil.html">Enviar Quiz</button>
+                </div>
+            </div>
+            <script src="js/quiz.js"></script>
+        </div>
+
+
+
+
+
     <footer class="footer">
         <div class="container">
             <p class="text-muted"> © 2018 Copyright Text</p>
